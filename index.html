@@ -6,10 +6,18 @@
 <meta name="robots" content="index,follow">
 <meta name="description" content="SMS Terms &amp; Conditions for the text messaging program of The Cleaning Authority - Coral Springs, independently owned and operated by Palavasi Service Group LLC.">
 <title>SMS Terms &amp; Conditions | The Cleaning Authority - Coral Springs</title>
-<link rel="icon" href="data:,">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2366a038'/%3E%3C/svg%3E">
 <style>
   :root {
     color-scheme: light;
+    --brand-green: #66a038;
+    --brand-green-text: #4a7a26;
+    --brand-blue: #0079c1;
+    --ink: #222222;
+    --muted: #5b6770;
+    --rule: #e6e6e6;
+    --font-heading: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   *,
   *::before,
@@ -22,66 +30,126 @@
   }
   body {
     margin: 0;
-    background: #fafafa;
-    color: #1f2328;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: var(--font-body);
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.67;
     overflow-wrap: break-word;
   }
-  main {
+  .wrap {
     max-width: 720px;
     margin: 0 auto;
-    padding: 40px 16px 64px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  header {
-    margin-bottom: 32px;
+
+  .site-header {
+    background: #ffffff;
+    border-top: 5px solid var(--brand-green);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  .site-header .wrap {
+    padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #d8dee4;
   }
-  h1 {
-    margin: 0 0 4px;
-    font-size: 1.75rem;
-    line-height: 1.25;
+  .wordmark {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
   }
-  h2 {
+  .wordmark-brand {
+    color: var(--brand-blue);
+  }
+  .wordmark-location {
+    color: var(--brand-green);
+  }
+
+  main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .intro {
+    margin-bottom: 8px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .intro h2 {
     margin: 0 0 12px;
-    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.2;
   }
+  .operator {
+    margin: 0 0 4px;
+    color: var(--muted);
+  }
+  .effective {
+    margin: 0;
+    font-weight: 700;
+  }
+
   h3 {
-    margin: 32px 0 8px;
+    margin: 28px 0 8px;
     font-size: 1.0625rem;
+    font-weight: 700;
     line-height: 1.35;
   }
-  p,
-  address {
-    margin: 0 0 12px;
-  }
-  address {
-    font-style: normal;
-  }
-  .meta {
-    margin: 0;
-    color: #57606a;
+  p {
+    margin: 0 0 16px;
   }
   a {
-    color: #0b5cad;
+    color: var(--brand-green-text);
+    text-underline-offset: 2px;
   }
   a:hover {
-    color: #084a8c;
+    color: var(--brand-blue);
+  }
+
+  .contact-band {
+    background: var(--brand-blue);
+    border-bottom: 5px solid var(--brand-green);
+    color: #ffffff;
+  }
+  .contact-band .wrap {
+    padding-top: 32px;
+    padding-bottom: 36px;
+  }
+  .contact-band h3 {
+    margin-top: 0;
+  }
+  .contact-band address {
+    font-style: normal;
+  }
+  .contact-band a {
+    color: #ffffff;
+  }
+  .contact-phone {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
   }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <h1>The Cleaning Authority - Coral Springs</h1>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="wordmark"><span class="wordmark-brand">The Cleaning Authority</span> <span class="wordmark-location">- Coral Springs</span></h1>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
     <h2>SMS Terms &amp; Conditions</h2>
-    <p class="meta">Operated by Palavasi Service Group LLC</p>
-    <p class="meta">Effective date: October 8, 2026</p>
-  </header>
+    <p class="operator">Operated by Palavasi Service Group LLC</p>
+    <p class="effective">Effective date: October 8, 2026</p>
+  </div>
 
   <section>
     <h3>1. Who we are</h3>
@@ -122,14 +190,16 @@
     <h3>8. Changes to these terms</h3>
     <p>We may update these terms from time to time. The effective date above shows the current version.</p>
   </section>
+</main>
 
-  <section>
+<footer class="contact-band">
+  <section class="wrap">
     <h3>9. Contact</h3>
     <address>
       Palavasi Service Group LLC, operating as The Cleaning Authority - Coral Springs<br>
-      <a href="tel:+19545058013">(954) 505-8013</a>
+      <a class="contact-phone" href="tel:+19545058013">(954) 505-8013</a>
     </address>
   </section>
-</main>
+</footer>
 </body>
 </html>
