@@ -32,8 +32,8 @@ such as `privacy.html`, keep the same `<style>` block, and replace the content i
 
 The Vercel project is `palavasiservicegroup`.
 
-- If the GitHub repo is connected to the Vercel project, pushing to `main` deploys to production.
-- To deploy manually from this folder:
+- This GitHub repo is connected to the Vercel project. Pushing to `main` deploys to production.
+- To deploy manually from this folder instead:
 
   ```bash
   vercel --prod
